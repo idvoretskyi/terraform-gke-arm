@@ -34,7 +34,7 @@ You can directly reference these modules in your Terraform configuration:
 
 ```hcl
 module "my_monitoring" {
-  source = "/path/to/terraform-gcp-k8s/modules/monitoring"
+  source = "/path/to/terraform-gke-arm/modules/monitoring"
   
   # Variables specific to the module
   namespace = "custom-monitoring"
@@ -47,7 +47,7 @@ You can create your own modules that combine or extend the functionality of thes
 
 ```hcl
 module "monitoring" {
-  source = "/path/to/terraform-gcp-k8s/modules/monitoring"
+  source = "/path/to/terraform-gke-arm/modules/monitoring"
   
   namespace = var.monitoring_namespace
 }
